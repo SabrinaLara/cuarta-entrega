@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/*Estilos globales - 1em=16px*/
+/*variables*/
+body {
+  margin: 0em;
+  font-family: sans-serif; }
+
+/*comienzo nav*/
+.block-one__title {
+  font-size: 1.4em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #ffc107;
+  text-decoration: none;
+  line-height: 3.1em; }
+
+.block-one__title:hover {
+  color: yellow; }
+
+.block-one__nav {
+  background-color: #383838;
+  opacity: 0.7;
+  /*box-shadow: 0 15px 20px 0 rgb(0 0 0 / 35%);*/
+  padding: 0.5em; }
+
+.block-one__nav:hover {
+  opacity: 1; }
+  .block-one__nav:hover .block-one__menu li a:hover {
+    background-color: #3d3d3d;
+    color: white;
+    transition: all .5s; }
+
+/*fin nav*/
+/*Comienzo carousel*/
+.block-two__carousel-custom h3 {
+  font-size: 2.4em;
+  font-weight: bold; }
+
+.block-two__carousel-link {
+  font-weight: bold; }
+
+.block-two__carousel-link:hover {
+  font-weight: bold;
+  color: black;
+  text-decoration: none; }
+
+/*fin carousel*/
+/*comienzo seccion instrumentos*/
+.block-three__title-instru {
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #383838;
+  padding: 1em;
+  /*flex*/
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.block-three__title-instru:hover {
+  color: #ffc107; }
+
+.block-three__img-instru {
+  width: 15em;
+  height: 14.7em;
+  margin: 3.1em;
+  transition: transform 1s;
+  /*flex*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+/*fin seccion instrumentos*/
+/*comienzo seccion marcas*/
+.block-four__title-instru-brand {
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #ffc107;
+  margin: 1em;
+  /*flex*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+
+.block-four__img-brand {
+  width: 20em;
+  height: 10.5em; }
+
+/*fin seccion marcas*/
+/*inicio footer*/
+.block-five__custom-footer {
+  font-size: 1.1em;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 1.2em;
+  background-color: #383838;
+  color: #ffffff;
+  margin: auto;
+  /*gradiente*/
+  background-image: linear-gradient(to bottom, #383838, #636e72); }
+  .block-five__custom-footer .block-five__custom-footer h4 {
+    color: #ffc107; }
+
+.block-five__custom-social {
+  list-style-type: none;
+  padding-inline-start: 0em;
+  /*FLEX*/
+  display: flex;
+  justify-content: center; }
+  .block-five__custom-social .block-five__custom-social li a {
+    text-decoration: none;
+    color: white; }
+
+.block-five__custom-icon {
+  height: 3em;
+  margin: 0.2em; }
+
+.block-five__custom-icon:hover {
+  animation: rotateIn;
+  animation-duration: 0.5s; }
+
+/*fin footer*/
+/*Acá empiezan los estilos de intrumentos y saxofones*/
+.block-one__margin {
+  margin-top: 8em; }
+
+.block-one__instru-section h2 {
+  /*FLEX*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.block-one__instru-section h3 {
+  border-bottom: solid 0.2em #ffc107; }
+
+.block-one__title-clarinet {
+  border-bottom: solid 0.1em #ffc107; }
+
+.block-one__instrument-custom {
+  width: 100%;
+  max-width: 99.5em;
+  height: auto;
+  animation: slideInLeft;
+  animation-duration: 3s; }
+
+/*Fin de estilos de intrumentos y saxofones*/
+/*Acá empiezan los estilos de accesorios*/
+.block-one__accesorios {
+  text-align: center; }
+  .block-one__accesorios .block-one__accesorios h2 {
+    border-bottom: solid 0.2em #ffc107; }
+
+.block-one__accesorios img {
+  width: 31.2em;
+  height: 18.7em;
+  margin: auto;
+  display: block;
+  animation: zoomIn;
+  animation-duration: 1s; }
+
+/*Acá empiezan los estilos de artistas*/
+.block-one__section-artists {
+  font-size: 1.1em;
+  /*FLEX*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .block-one__section-artists .block-one__section-artists h3 {
+    animation: fadeInTopLeft;
+    animation-duration: 1s; }
+
+.block-one__title-artists {
+  border-bottom: solid 0.3em #ffc107;
+  margin: 1em;
+  padding: 0em; }
+  .block-one__title-artists .block-one__img-artists {
+    width: 32.2em;
+    height: 21.7em; }
+
+.block-one__img-artists:hover {
+  transform: rotate(2deg); }
+
+/*fin estilos de artistas*/
+/*Acá empiezan los estilos de contacto*/
+.block-one__margin-contact {
+  margin-top: 4em; }
+
+.block-one__contact {
+  font-size: 1.1em;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5em; }
+
+.block-one__contact-custom {
+  border: solid 0.5em #ffc107;
+  margin: 1em;
+  background: #ffc1092e; }
+
+.block-two__form {
+  font-size: 1.1em;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 1em;
+  border: solid 0.5em #ffc107;
+  padding: 1em;
+  background: #ffc1092e;
+  animation: backInLeft;
+  animation-duration: 1s; }
+  .block-two__form .block-two__form legend {
+    font-weight: bold; }
+
+/*Fin estilos de contacto*/
